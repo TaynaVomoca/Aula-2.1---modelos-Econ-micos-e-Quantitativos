@@ -41,3 +41,6 @@ ggplot(data = distancia, aes(x = idade, y = distancia)) + geom_point(size = 3) +
   plot(modelo_1)
   
   #HOMOCEDASTICIDADE DOS RESÍDUOS
+
+  plot(distancia$idade, rstandard(modelo_1), xlab = "Idade", ylab = "Resíduos")
+  abline(0,0)
